@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holistic Medical Center & Rehabilitation | Physical Therapy in Manama</title>
+<meta name="description" content="Holistic Medical Center & Rehabilitation — physical therapy and rehabilitation clinic in Manama, Bahrain. Rated 4.4 on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+  /* Critical preloader paint. The main stylesheet arrives a beat later (and
+     in dev is injected by JS), so without this the overlay is unstyled for
+     a frame and page content flashes through behind it. */
+  #preloader{
+    position:fixed;inset:0;z-index:500;
+    display:flex;align-items:center;justify-content:center;
+    background:#fff;
+  }
+  #preloader .pl-inner{display:flex;flex-direction:column;align-items:center;}
+  /* Sized here as well as via attributes: an unsized <svg> falls back to
+     300x150, which is what made a large shape flash before CSS arrived. */
+  #preloader .pl-badge{position:relative;width:148px;height:148px;}
+  #preloader .pl-wave{width:148px;height:148px;display:block;}
+  #preloader .pl-icon{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:60px;height:60px;border-radius:16px;overflow:hidden;background:#fff;
+  }
+  #preloader .pl-icon img{width:60px;height:60px;object-fit:cover;display:block;}
+</style>
+</head>
+<body>
+
+<div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading">
+  <div class="pl-inner">
+    <!-- Material 3 Expressive wavy progress (the Play Store install / Android
+         16+ indicator): the filled portion is a travelling squiggle, the
+         remaining track stays flat, with a gap between them. Both paths are
+         generated in JS each frame so the wave actually moves.
+         Sizes/strokes are presentation attributes, not CSS only — an unsized
+         <svg> falls back to 300x150, which caused the earlier shape flash. -->
+    <div class="pl-badge">
+      <svg class="pl-wave" viewBox="0 0 148 148" width="148" height="148" aria-hidden="true" fill="none">
+        <g>
+          <path id="plTrack" fill="none" stroke="rgba(14,42,51,.13)" stroke-width="6" stroke-linecap="round"/>
+          <path id="plWave"  fill="none" stroke="#0090A5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <span class="pl-icon"><img src="/logo.jpg" alt="" width="60" height="60"></span>
+    </div>
+
+    <span class="pl-name">Holistic</span>
+    <span class="pl-sub">Medical Center &amp; Rehabilitation</span>
+    <span class="pl-pct" id="plPct">0%</span>
+  </div>
+</div>
+
+<a href="#top" class="skip-link">Skip to content</a>
+
+<header id="siteHeader">
+  <div class="nav-shell">
+    <nav>
+      <a href="#top" class="logo">
+        <span class="logo-mark"><img src="/logo.jpg" alt="Holistic Medical Center logo"></span>
+        <span>Holistic</span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#conditions">Conditions</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+97317646433" class="btn btn-primary btn-magnetic">Book Appointment<span class="btn-ic"><i data-lucide="arrow-up-right"></i></span></a>
+        <button type="button" class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button type="button" class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#services">Services</a>
+  <a href="#conditions">Conditions</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#visit">Visit Us</a>
+  <a href="tel:+97317646433" class="btn btn-primary">Call Now<span class="btn-ic"><i data-lucide="phone"></i></span></a>
+</div>
+
+<main id="top">
+
+  <!-- HERO — pinned, 3D depth chips, split-line headline -->
+  <section class="hero" id="hero">
+    <div class="hero-pin">
+      <div class="hero-halo"></div>
+      <div class="hero-watermark" aria-hidden="true">Move</div>
+
+      <div class="hero-chips" aria-hidden="true">
+        <div class="hero-chip" data-depth="0.9"><span class="ic"><i data-lucide="heart-pulse"></i></span>Pain Relief</div>
+        <div class="hero-chip" data-depth="0.5"><span class="ic"><i data-lucide="person-standing"></i></span>Mobility</div>
+        <div class="hero-chip" data-depth="1.2"><span class="ic"><i data-lucide="dumbbell"></i></span>Strength</div>
+        <div class="hero-chip" data-depth="0.7"><span class="ic"><i data-lucide="heart-handshake"></i></span>Recovery</div>
+        <div class="hero-chip" data-depth="1.0"><span class="ic"><i data-lucide="activity"></i></span>Performance</div>
+      </div>
+
+      <div class="container hero-core">
+        <div class="eyebrow hero-eyebrow"><span></span> Physical Therapy Clinic</div>
+        <h1 class="hero-title"><span class="ht-line"><span class="ht-cycle-wrap" id="heroCycle"><span class="ht-cycle-word is-active">Move</span><span class="ht-cycle-word">Live</span></span> <em>Better.</em></span></h1>
+        <p class="lead hero-lead">Expert physiotherapy &amp; rehabilitation for a pain-free life — a personalized recovery roadmap from first assessment to full, confident movement.</p>
+        <div class="hero-actions">
+          <a href="tel:+97317646433" class="btn btn-primary btn-lg btn-magnetic">Book Appointment<span class="btn-ic"><i data-lucide="phone"></i></span></a>
+          <a href="#conditions" class="btn btn-ghost btn-lg btn-magnetic">See how it works<span class="btn-ic"><i data-lucide="arrow-down"></i></span></a>
+        </div>
+        <div class="rating-row">
+          <div class="stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <div class="rating-text"><b>4.4</b> on Google · 25 reviews</div>
+        </div>
+        <div class="eyebrow hero-eyebrow hero-eyebrow-end"><span></span> Manama, Bahrain</div>
+      </div>
+
+      <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
+    </div>
+  </section>
+
+  <!-- STATS (real facts only) -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat reveal"><div class="num" data-count="4.4">0</div><div class="lbl">Google Rating</div></div>
+      <div class="stat reveal"><div class="num"><span data-count="25">0</span>+</div><div class="lbl">Patient Reviews</div></div>
+      <div class="stat reveal"><div class="num"><span data-count="8">0</span>PM</div><div class="lbl">Open Daily Until</div></div>
+      <div class="stat reveal"><div class="num"><span data-count="1">0</span></div><div class="lbl">Location in Manama</div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES (paper) -->
+  <section class="section-pad on-paper" id="services">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-eyebrow reveal">What We Treat</span>
+        <h2 class="split-lines">Rehabilitation built for real, daily movement</h2>
+        <p class="reveal">From post-surgical recovery to sports injuries, our therapists design hands-on programs that get you back to the life you paused.</p>
+      </div>
+      <div class="treat-explorer reveal">
+        <!-- LEFT: selectable list -->
+        <div class="te-list" role="tablist" aria-label="Treatments we provide">
+          <button class="te-item is-active" role="tab" id="te-tab-1" aria-controls="te-panel-1" aria-selected="true" tabindex="0" data-te="1">
+            <span class="te-num">01</span>
+            <span class="te-label">Physical Therapy</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+          <button class="te-item" role="tab" id="te-tab-2" aria-controls="te-panel-2" aria-selected="false" tabindex="-1" data-te="2">
+            <span class="te-num">02</span>
+            <span class="te-label">Sports Rehabilitation</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+          <button class="te-item" role="tab" id="te-tab-3" aria-controls="te-panel-3" aria-selected="false" tabindex="-1" data-te="3">
+            <span class="te-num">03</span>
+            <span class="te-label">Post-Surgical Recovery</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+          <button class="te-item" role="tab" id="te-tab-4" aria-controls="te-panel-4" aria-selected="false" tabindex="-1" data-te="4">
+            <span class="te-num">04</span>
+            <span class="te-label">Manual Therapy</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+          <button class="te-item" role="tab" id="te-tab-5" aria-controls="te-panel-5" aria-selected="false" tabindex="-1" data-te="5">
+            <span class="te-num">05</span>
+            <span class="te-label">Chronic Pain Management</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+          <button class="te-item" role="tab" id="te-tab-6" aria-controls="te-panel-6" aria-selected="false" tabindex="-1" data-te="6">
+            <span class="te-num">06</span>
+            <span class="te-label">Mobility &amp; Balance</span>
+            <span class="te-arrow"><i data-lucide="arrow-right"></i></span>
+          </button>
+        </div>
+
+        <!-- RIGHT: detail panels -->
+        <div class="te-detail">
+          <div class="te-panel is-active" role="tabpanel" id="te-panel-1" aria-labelledby="te-tab-1" data-te="1">
+            <span class="te-eyebrow">Core Programme</span>
+            <h3>Physical Therapy</h3>
+            <p>Targeted, evidence-based sessions to restore strength, flexibility, and pain-free range of motion.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Full movement &amp; strength assessment</li>
+              <li><span class="dot"></span>Progressive loading built to your tolerance</li>
+              <li><span class="dot"></span>Range-of-motion restored without flare-ups</li>
+            </ul>
+          </div>
+
+          <div class="te-panel" role="tabpanel" id="te-panel-2" aria-labelledby="te-tab-2" data-te="2" hidden>
+            <span class="te-eyebrow">Performance</span>
+            <h3>Sports Rehabilitation</h3>
+            <p>Return-to-play programs that rebuild performance while protecting against re-injury.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Objective return-to-play testing</li>
+              <li><span class="dot"></span>Sport-specific conditioning</li>
+              <li><span class="dot"></span>Re-injury risk screening</li>
+            </ul>
+          </div>
+
+          <div class="te-panel" role="tabpanel" id="te-panel-3" aria-labelledby="te-tab-3" data-te="3" hidden>
+            <span class="te-eyebrow">Guided Recovery</span>
+            <h3>Post-Surgical Recovery</h3>
+            <p>Structured protocols that follow your surgeon's plan and rebuild function step by step.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Protocol aligned to your surgeon</li>
+              <li><span class="dot"></span>Scar tissue &amp; swelling management</li>
+              <li><span class="dot"></span>Staged strength rebuild, no shortcuts</li>
+            </ul>
+          </div>
+
+          <div class="te-panel" role="tabpanel" id="te-panel-4" aria-labelledby="te-tab-4" data-te="4" hidden>
+            <span class="te-eyebrow">Hands-On Care</span>
+            <h3>Manual Therapy</h3>
+            <p>Hands-on joint and soft-tissue techniques to relieve stiffness and reduce chronic pain, including lower back and spine.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Joint mobilisation &amp; manipulation</li>
+              <li><span class="dot"></span>Soft-tissue and trigger-point release</li>
+              <li><span class="dot"></span>Spinal, postural and lower-back work</li>
+            </ul>
+          </div>
+
+          <div class="te-panel" role="tabpanel" id="te-panel-5" aria-labelledby="te-tab-5" data-te="5" hidden>
+            <span class="te-eyebrow">Long-Term Care</span>
+            <h3>Chronic Pain Management</h3>
+            <p>Long-term care plans combining therapy, education, and lifestyle guidance.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Pain-science education you can use</li>
+              <li><span class="dot"></span>Graded activity and pacing</li>
+              <li><span class="dot"></span>Flare-up self-management plan</li>
+            </ul>
+          </div>
+
+          <div class="te-panel" role="tabpanel" id="te-panel-6" aria-labelledby="te-tab-6" data-te="6" hidden>
+            <span class="te-eyebrow">Independence</span>
+            <h3>Mobility &amp; Balance</h3>
+            <p>Fall-prevention and mobility training focused on independence and confidence.</p>
+            <ul class="te-points">
+              <li><span class="dot"></span>Balance &amp; gait screening</li>
+              <li><span class="dot"></span>Targeted fall-risk reduction</li>
+              <li><span class="dot"></span>Confidence in everyday movement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITION 01: NECK & SHOULDER — full-cover video (1.mp4) -->
+  <section class="condition cover" id="conditions" data-index="01">
+    <div class="cond-media" data-clip>
+      <video class="scroll-video" muted loop playsinline preload="auto" poster="/1-poster.jpg">
+        <source src="/1s.mp4" type="video/mp4">
+      </video>
+      <div class="cond-scrim"></div>
+      <div class="condition-num" aria-hidden="true">01</div>
+    </div>
+    <div class="container cond-overlay">
+      <div class="cond-panel">
+        <span class="condition-tag">Neck &amp; Shoulder</span>
+        <h2 class="split-lines">Desk pain? <em>We treat the cause.</em></h2>
+        <p class="condition-copy">Hours at a screen build tension that radiates from the neck into the shoulder. We identify the exact source before any treatment begins.</p>
+        <div class="symptom-list">
+          <div class="symptom-item"><span class="dot"></span><div><b>Postural Strain</b><span>Prolonged desk posture overloads the neck and upper back.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Muscle Tension</b><span>Tight muscles restrict movement and cause referred pain.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Nerve Irritation</b><span>Compressed nerves in the neck causing pain down the arm.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFESTYLE: full-cover (3.mp4) -->
+  <section class="lifestyle">
+    <div class="lifestyle-media" data-clip>
+      <video class="scroll-video" muted loop playsinline preload="auto" poster="/3-poster.jpg">
+        <source src="/3s.mp4" type="video/mp4">
+      </video>
+      <div class="lifestyle-scrim"></div>
+      <div class="lifestyle-copy">
+        <span class="lifestyle-tag reveal">Every Age, Every Story</span>
+        <h2 class="split-lines">Care that grows <em>with your family.</em></h2>
+        <p class="reveal">From a child's first sports injury to the physical demands of new parenthood, our programs are built for every stage of life — not a one-size-fits-all routine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITION 02: SHOULDER / YOUTH SPORTS — full-cover video (2.mp4) -->
+  <section class="condition cover reverse" data-index="02">
+    <div class="cond-media" data-clip>
+      <video class="scroll-video" muted loop playsinline preload="auto" poster="/2-poster.jpg">
+        <source src="/2s.mp4" type="video/mp4">
+      </video>
+      <div class="cond-scrim"></div>
+      <div class="condition-num" aria-hidden="true">02</div>
+    </div>
+    <div class="container cond-overlay">
+      <div class="cond-panel">
+        <span class="condition-tag">Shoulder &amp; Sports Injuries</span>
+        <h2 class="split-lines">Growing pains? <em>We catch it early.</em></h2>
+        <p class="condition-copy">Sports injuries in younger patients need careful, age-appropriate assessment — pinpointing the structure involved helps relieve pain and restore full range of motion.</p>
+        <div class="symptom-list">
+          <div class="symptom-item"><span class="dot"></span><div><b>Rotator Cuff Strain</b><span>Overuse or impact causing pain and weakness in the shoulder.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Joint Inflammation</b><span>Swelling that limits range of motion and comfort.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Muscle Imbalance</b><span>Weak supporting muscles put extra strain on a developing joint.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITION 03: KNEE & MOBILITY — full-cover video (4.mp4) -->
+  <section class="condition cover" id="lower-back" data-index="03">
+    <div class="cond-media" data-clip>
+      <video class="scroll-video" muted loop playsinline preload="auto" poster="/4-poster.jpg">
+        <source src="/4s.mp4" type="video/mp4">
+      </video>
+      <div class="cond-scrim"></div>
+      <div class="condition-num" aria-hidden="true">03</div>
+    </div>
+    <div class="container cond-overlay">
+      <div class="cond-panel">
+        <span class="condition-tag">Knee &amp; Mobility</span>
+        <h2 class="split-lines">Knee pain? <em>We find lasting relief.</em></h2>
+        <p class="condition-copy">Mobility changes with age, but pain-free movement shouldn't stop. We locate the real cause — joint, muscle, or balance — and build a plan for lasting relief.</p>
+        <div class="symptom-list">
+          <div class="symptom-item"><span class="dot"></span><div><b>Joint Stiffness</b><span>Reduced range of motion making daily movement harder.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Joint Stress</b><span>Overuse or old injury accelerating wear on the joint.</span></div></div>
+          <div class="symptom-item"><span class="dot"></span><div><b>Balance &amp; Fall Risk</b><span>Reduced stability increasing the risk of falls.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS (paper) -->
+  <section class="section-pad on-paper" id="treatments">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-eyebrow reveal">Our Physiotherapy Treatments</span>
+        <h2 class="split-lines">Seven programs, one connected plan</h2>
+        <p class="reveal">Every treatment is delivered by licensed therapists and adjusted as your recovery progresses.</p>
+      </div>
+      <div class="treat-grid">
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="hand"></i></div><h3>Manual Therapy</h3><p>Hands-on techniques to relieve pain and improve movement.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="dumbbell"></i></div><h3>Exercise Therapy</h3><p>Customized exercises to strengthen and rehabilitate.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="trophy"></i></div><h3>Sports Rehab</h3><p>Specialized rehab to get you back to peak performance.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="stethoscope"></i></div><h3>Post-Surgery Rehab</h3><p>Guided recovery programs for faster healing.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="zap"></i></div><h3>Pain Management</h3><p>Advanced techniques to reduce pain and improve function.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="brain"></i></div><h3>Neurological Rehab</h3><p>Support for stroke, Parkinson's &amp; other conditions.</p></div>
+        <div class="treat-card reveal tilt-card"><div class="treat-icon"><i data-lucide="baby"></i></div><h3>Women's Health Physio</h3><p>Care for pregnancy, postnatal &amp; pelvic health.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & HONEST INFO -->
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="sec-eyebrow reveal">About The Clinic</span>
+        <h2 class="split-lines">Holistic Medical Center <em>&amp; Rehabilitation</em></h2>
+        <p class="reveal">We are a physiotherapy and rehabilitation clinic in Manama, dedicated to helping people of all ages move better, feel less pain, and regain confidence in daily life through personalized, hands-on care.</p>
+        <div class="about-badges reveal">
+          <div class="about-badge"><span class="ic"><i data-lucide="badge-check"></i></span>Licensed Therapists</div>
+          <div class="about-badge"><span class="ic"><i data-lucide="calendar-days"></i></span>Flexible Scheduling</div>
+          <div class="about-badge"><span class="ic"><i data-lucide="heart-handshake"></i></span>Personalized Care</div>
+        </div>
+      </div>
+      <div class="about-panels reveal">
+        <div class="steps-panel">
+          <h4>How Treatment Works</h4>
+          <div class="step-row"><span class="step-num">1</span><div><b>Assessment</b><span>A full mobility &amp; pain evaluation to find the real cause.</span></div></div>
+          <div class="step-row"><span class="step-num">2</span><div><b>Personalized Plan</b><span>Hands-on treatment built around your specific condition.</span></div></div>
+          <div class="step-row"><span class="step-num">3</span><div><b>Progress &amp; Recovery</b><span>Your plan adjusts as strength and mobility return.</span></div></div>
+        </div>
+        <div class="info-panel">
+          <h4>Clinic Information</h4>
+          <div class="info-row-sm"><i data-lucide="map-pin"></i><span>Block 333 Building, 860 Rd No. 3305, Manama</span></div>
+          <div class="info-row-sm"><i data-lucide="phone"></i><span>1764 6433</span></div>
+          <div class="info-row-sm"><i data-lucide="clock"></i><span>Open Today · Closes 8:00 PM</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS (real aggregate rating only) -->
+  <section class="section-pad on-paper" id="reviews">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-eyebrow reveal">Patient Reviews</span>
+        <h2 class="split-lines">Trusted by patients across Manama</h2>
+        <p class="reveal">Rated 4.4 out of 5 on Google, based on 25 reviews.</p>
+      </div>
+      <div class="rating-showcase reveal">
+        <div class="rs-score">
+          <div class="big">4.4</div>
+          <div class="stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p>25 Google reviews</p>
+        </div>
+        <div class="rs-divider"></div>
+        <div class="rs-copy">
+          <h3>Read what patients are saying</h3>
+          <p>Our rating reflects real Google reviews from patients treated at the clinic — see the latest ones directly on Google before you book.</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Holistic+Medical+Center+%26+Rehabilitation+Manama+Bahrain" target="_blank" rel="noopener" class="btn btn-primary btn-magnetic">Read Reviews on Google<span class="btn-ic"><i data-lucide="arrow-up-right"></i></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section-pad visit" id="visit">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-eyebrow reveal">Visit The Clinic</span>
+        <h2 class="split-lines">Find us in Manama</h2>
+      </div>
+      <div class="visit-grid reveal">
+        <div class="visit-info">
+          <h3>Holistic Medical Center &amp; Rehabilitation</h3>
+          <p>Physical therapy clinic · Manama, Bahrain</p>
+          <div class="info-row"><div class="ic"><i data-lucide="map-pin"></i></div><div class="txt"><b>Address</b><span>Block 333 Building, 860 Rd No. 3305, Manama, Bahrain</span></div></div>
+          <div class="info-row"><div class="ic"><i data-lucide="phone"></i></div><div class="txt"><b>Phone</b><span>1764 6433</span></div></div>
+          <div class="info-row"><div class="ic"><i data-lucide="clock"></i></div><div class="txt"><b>Hours Today</b><span>Open now · Closes 8:00 PM</span></div></div>
+          <div class="info-row"><div class="ic"><i data-lucide="star"></i></div><div class="txt"><b>Rating</b><span>4.4 out of 5 · 25 Google reviews</span></div></div>
+          <div class="visit-actions">
+            <a href="tel:+97317646433" class="btn btn-primary btn-magnetic">Call 1764 6433<span class="btn-ic"><i data-lucide="phone"></i></span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Holistic+Medical+Center+%26+Rehabilitation+Manama+Bahrain" target="_blank" rel="noopener" class="btn btn-ghost btn-magnetic">Get Directions<span class="btn-ic"><i data-lucide="map-pin"></i></span></a>
+          </div>
+        </div>
+        <div class="visit-map">
+          <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.7037859452375!2d50.577737576346216!3d26.206312477075258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49af23329ff519%3A0x81b89f6b55093919!2sHolistic%20Medical%20Center%20%26%20Rehabilitation!5e0!3m2!1sen!2sbh!4v1785701003184!5m2!1sen!2sbh" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" title="Holistic Medical Center &amp; Rehabilitation location"></iframe>
+          <div class="map-caption"><b>Block 333 Building</b><span>860 Rd No. 3305, Manama</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="split-lines">Ready to move <em>without pain?</em></h2>
+      <p class="reveal">Book your first assessment with Holistic Medical Center &amp; Rehabilitation today.</p>
+      <div class="cta-actions reveal">
+        <a href="tel:+97317646433" class="btn btn-primary btn-lg btn-magnetic">Call 1764 6433<span class="btn-ic"><i data-lucide="phone"></i></span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Holistic+Medical+Center+%26+Rehabilitation+Manama+Bahrain" target="_blank" rel="noopener" class="btn btn-ghost btn-lg btn-magnetic">Get Directions<span class="btn-ic"><i data-lucide="map-pin"></i></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid reveal">
+      <div>
+        <div class="foot-logo"><span class="logo-mark"><img src="/logo.jpg" alt=""></span>Holistic Medical Center &amp; Rehabilitation</div>
+        <p class="foot-blurb">Physical therapy and rehabilitation clinic in Manama, Bahrain. Rated 4.4 on Google from 25 reviews.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#top">Home</a></li><li><a href="#services">Services</a></li><li><a href="#conditions">Conditions</a></li><li><a href="#visit">Contact Us</a></li></ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul><li>Manual Therapy</li><li>Exercise Therapy</li><li>Sports Rehab</li><li>Pain Management</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>Block 333 Building, 860 Rd No. 3305, Manama</li><li><a href="tel:+97317646433">1764 6433</a></li><li>Open Today · Closes 8:00 PM</li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Holistic Medical Center &amp; Rehabilitation. All rights reserved.</span>
+      <span>Manama, Kingdom of Bahrain</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

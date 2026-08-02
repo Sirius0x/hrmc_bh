@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Vercel local project link
+.vercel
+
+# Tooling caches
+.vite
+.cache
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local agent/session state
+.gstack/
+.remember
+.claude
+
+# Source media kept out of the repo — only the optimised public/ copies ship.
+# Backups produced while re-encoding video.
+*.bak
